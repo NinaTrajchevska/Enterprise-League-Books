@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" tyle="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Books</title>
+  </head>
+  <body>
+    
+    <div class="section hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div id="first">
+            <img
+              src="books.jpg"
+              loading="lazy"
+              alt="Books"
+              class="image-2" 
+            />
+          </div>
+          <div id="second">
+            <div class="message">
+              <h1 class="heading1">A Journey Through Literature:<br>Exploring Different Genres and Styles</h1><br>
+              <div class="text">
+                Books have the power to transport you to different worlds, cultures, and perspectives. They can challenge your thinking and broaden your horizons. Reading books can improve your vocabulary, memory, and critical thinking skills.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+      <div id="searchDiv">
+        <input id="searchInput"class="search" type="text" placeholder="Enter search query">
+        <button class="btn" id="btnSearch">Search</button>
+      </div>
+
+      <div class="container">
+      <div class="dropdown">
+        <button class="btn" id="btnSort">Sorting</button>
+        <div class="dropdown-content">
+          <a href="#" id="sortTitle">Sort by Title</a>
+          <a href="#" id="sortAuthor">Sort by Author Name</a>
+          <a href="#" id="sortGenre">Sort by Genre</a>
+        </div>
+      </div>
+      </div>
+      
+      <div class="section hero">
+        <div class="container">
+          <h1 id="sortedHeading"class="heading1" style="text-align:center;" >Books sorted by Author</h1>
+          <span id="span"></span>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Author</th>
+                    <th>Title</th>
+                    <th>Genre</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+              </table>
+          
+        </div>
+      </div>
+    
+      <script type="module" src="script.js"></script>
+      
+  </body>
+</html>
